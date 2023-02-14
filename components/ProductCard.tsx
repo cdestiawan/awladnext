@@ -8,7 +8,7 @@ type Props = {
 
 export default function ProductCard({ product }: Props) {
   return (
-    <div>
+    <div className="w-full p-4 md:w-1/2 lg:w-1/4">
       {product.images ? (
         <ProductCardImage
           url={product.images[0].url}

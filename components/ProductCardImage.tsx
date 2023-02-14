@@ -9,7 +9,7 @@ type Props = {
 
 export default function ProductCardImage({ url, alt, width, height }: Props) {
   if (!url) {
-    url = "https://placehold.co/300";
+    url = "https://placehold.co/500";
   }
 
   if (!alt) {
@@ -17,18 +17,18 @@ export default function ProductCardImage({ url, alt, width, height }: Props) {
   }
 
   if (!width) {
-    width = 300;
+    width = 500;
   }
 
   if (!height) {
-    height = 300;
+    height = 500;
   }
   return (
     <Image
       src={url}
       alt={"product image" && alt}
-      width={300 || width}
-      height={300 || height}
+      width={width}
+      height={height}
     />
   );
 }

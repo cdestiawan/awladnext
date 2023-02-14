@@ -9,7 +9,7 @@ type Props = {
 
 export default function ShopIndex({ products }: Props) {
   return (
-    <div className="flex">
+    <div className="flex flex-wrap">
       {products.map((product) => (
         <ProductCard product={product} key={product.id} />
       ))}
